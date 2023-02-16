@@ -1,0 +1,67 @@
+﻿<Page x:Class="MalevSchool.Pages.AddUpgradePage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:MalevSchool.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="AddUpgradePage" FontFamily="Comic Sans MS">
+
+    <Grid>
+        
+        <StackPanel >
+
+            <Button x:Name="Back" Margin="7" Width="150" HorizontalAlignment="Left" Click="Back_Click_2" Content="Назад" Background="#04a0ff" Foreground="White"></Button>
+
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Left">
+                
+                <Button Name="Backbtn" Click="Backbtn_Click" Visibility="Collapsed"  IsEnabled="False">&lt;</Button>
+                
+                <Image Name="Img" Width="150" HorizontalAlignment="Left" Margin="10" Source="/Resources/picture.png"></Image>
+                
+                <Button Name="Nextbtn"  Click="Nextbtn_Click" Visibility="Collapsed" >&gt;</Button>
+                
+            </StackPanel>
+
+            <Button Width="150" HorizontalAlignment="Left" Margin="5"  Name="safePhoto" Click="safePhoto_Click" Visibility="Collapsed" Background="#04a0ff" Foreground="White">Сохранить изображение</Button>
+
+            <Button Width="150" HorizontalAlignment="Left" Margin="5"  Name="addPhoto" Click="addPhoto_Click" Visibility="Visible" Background="#04a0ff" Foreground="White">Добавить изображение</Button>
+
+            <Button Width="150" HorizontalAlignment="Left" Margin="5"  Name="addPhotos" Click="addPhotos_Click" Visibility="Visible" Background="#04a0ff" Foreground="White">Добавить изображения</Button>
+
+            <Button Width="150" HorizontalAlignment="Left" Margin="5"  Name="UpdatePhoto" Visibility="Collapsed" Click="UpdatePhoto_Click" Background="#04a0ff" Foreground="White">Заменить изображение</Button>
+
+            <Button Width="150" HorizontalAlignment="Left" Margin="5"  Name="DeletPhoto" Click="DeletPhoto_Click" Background="#04a0ff" Foreground="White">Удалить фотографию</Button>
+
+            <Button Width="150" HorizontalAlignment="Left" Margin="5"  Name="back" Click="back_Click_1" Background="#04a0ff" Foreground="White">Назад</Button>
+            
+        </StackPanel>
+        
+        <StackPanel HorizontalAlignment="Right" >
+            
+            <TextBlock Text="Название услуги" FontSize="20" Margin="0,0,470,0" ></TextBlock>
+            
+            <TextBox x:Name="usl" Margin="5" ></TextBox>
+            
+            <TextBlock Text="Стоимость" FontSize="20" Margin="5" ></TextBlock>
+            
+            <TextBox x:Name="cost" Margin="5" ></TextBox>
+            
+            <TextBlock Text="Продолжительность" FontSize="20" Margin="5" ></TextBlock>
+            
+            <TextBox x:Name="time" Margin="5" ></TextBox>
+            
+            <TextBlock Text="Скидка" FontSize="20" Margin="5" ></TextBlock>
+            
+            <TextBox x:Name="sale" Margin="5" ></TextBox>
+            
+            <TextBlock Text="Описание" FontSize="20" Margin="5" ></TextBlock>
+            
+            <TextBox x:Name="opis" Margin="5" Width="600" Height="115" ></TextBox>
+
+            <Button Name="add" Click="add_Click" Width="220" Margin="5" Background="#04a0ff" Foreground="White">Сохранить</Button>
+            
+        </StackPanel>
+    </Grid>
+</Page>
